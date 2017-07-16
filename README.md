@@ -32,6 +32,7 @@ $ virtualenv ouimeaux-env
 $ source ouimeaux-env/bin/activate
 $ cd ouimeaux-env
 $ pip install git+https://github.com/syphoxy/ouimeaux.git
+$ pip install -e 'git+https://github.com/syphoxy/ouimeaux.git#egg=ouimeaux[server]'
 ```
 
 At this point you should be able to use `wemo` and `wemo server` so long as
