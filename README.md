@@ -57,6 +57,28 @@ $ pip2 --version
 pip 9.0.1 from /usr/lib/python2.7/site-packages (python 2.7)
 ```
 
+## Contributing
+
+The instructions for setting up a local environment are slightly different.
+
+```
+$ git clone https://github.com/syphoxy/ouimeaux.git
+
+# if you have a feature branch already, do this now
+$ cd ouimeaux
+$ git checkout feature/YOUR-BRANCH-HERE
+$ cd ..
+
+# not entirely certain if this is necessary but
+# don't forget to do this every time you switch branches
+$ virtualenv ouimeaux
+$ source ouimeaux/bin/activate
+
+$ cd ouimeaux
+$ pip install -r requirements.txt
+$ pip install -e . '.[server]'
+```
+
 ## Troubleshooting
 
 Open an issue and I'll try to help.
