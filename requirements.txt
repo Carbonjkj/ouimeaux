@@ -1,4 +1,4 @@
-gevent == 1.1b4
+gevent == 1.2.2
 requests >= 2.3.0
 pyyaml
 six
